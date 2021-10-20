@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+    <!--Expl:Padding/Margin-->
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Hello World!"
+        android:textColor="@color/custom"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+    <!--Expl:CenterParent-->
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMain"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Paswd"
+        android:inputType="textPassword"
+        android:lines="3"
+        android:minHeight="48dp" />
+    <!--Expl:Multiple lines, Mask, Hint-->
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Some Hardcoded Text Click!" />
+
+</RelativeLayout>
